@@ -1,0 +1,30 @@
+### GET /expenses
+GET http://localhost:3000/expenses
+Content-Type: application/json
+
+### POST /expenses - válido
+POST http://localhost:3000/expenses
+Content-Type: application/json
+
+{
+  "description": "Almoço",
+  "amount": 25.50
+}
+
+### POST /expenses - descrição vazia
+POST http://localhost:3000/expenses
+Content-Type: application/json
+
+{
+  "description": "",
+  "amount": 10
+}
+
+### POST /expenses - valor inválido
+POST http://localhost:3000/expenses
+Content-Type: application/json
+
+{
+  "description": "Transporte",
+  "amount": -5
+}
