@@ -41,8 +41,8 @@ Exercício da graduação em IA e Automação Digital (UniFECAF), no tema de IA 
 ## Como executar
 
 ```bash
-git clone https://github.com/lucasasimeao/Agentes-desenvolvimento.git
-cd Agentes-desenvolvimento/decolagem
+git clone https://github.com/lucasasimeao/controle-gastos-agentes-ia.git
+cd controle-gastos-agentes-ia/decolagem
 npm install
 npm start      # http://localhost:3000
 npm test       # teste de integração
@@ -81,4 +81,3 @@ decolagem/
 
 - Persistir os gastos (SQLite ou JSON) e adicionar categorias.
 - Gerar um resumo por categoria e por mês (base para análise de dados dos gastos).
-- Adicionar `.gitignore` e remover `node_modules/` do repositório.

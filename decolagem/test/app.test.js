@@ -59,6 +59,15 @@ function request(path, options = {}) {
   assert.strictEqual(createdExpense.description, 'Almoço');
   assert.strictEqual(createdExpense.amount, 25.5);
 
+  assert.strictEqual(createdExpense.descripition, undefined, 'Expense should not carry a misspelled duplicate field');
+
+  const invalidResponse = await request('/expenses', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ description: '   ', amount: -1 }),
+  });
+  assert.strictEqual(invalidResponse.statusCode, 400, 'POST /expenses should reject invalid input');
+
   console.log('Integration test passed');
 })().catch((error) => {
   console.error(error);

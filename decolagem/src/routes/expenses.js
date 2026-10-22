@@ -31,7 +31,6 @@ router.post('/', (req, res) => {
     id: nextId++,
     description: normalizedDescription,
     amount: normalizedAmount,
-    descripition: normalizedDescription,
   };
 
   expenses.push(expense);

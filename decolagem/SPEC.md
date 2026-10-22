@@ -17,4 +17,4 @@ Permite registrar e vizualizar gastos pessoais pelo navegador.
 - Descrição e valor são obrigatorios
 - Valor deve ser um número positivo
 - Gastos salvos em memória 
-- Cada gasto tem: id, descripition, amount,
+- Cada gasto tem: id, description, amount,
